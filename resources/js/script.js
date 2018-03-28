@@ -14,9 +14,7 @@ var turnPurple = function() {
 var turnYellow = function() {
 		$('#testHeader').css("color", "yellow");
 	};
-var turnBlack = function() {
-		$('#testHeader').css("color", "black");
-	};
+
 var turnGray = function() {
 		$('#testHeader').css("color", "gray");
 	};
@@ -28,16 +26,18 @@ var show_me = function(tag) {
  var splitWord = newArray.split(" ");
    var reverseWord = splitWord.reverse();
   var  spliceWord= reverseWord.splice(0, 3);
-	var revWord = spliceWord.join(" , ");
-	var result = revWord.reverse();
+	var result= spliceWord.join(" , ");
+	
  alert(result);
+	
+	
+	
   
   };
 
  
 
  
-
 
 var remove = function() {
   $('#testHeader').css("color","purple")
@@ -57,6 +57,10 @@ if (annyang) {
 	var commands = {
 		'green': turnGreen,
 		'red': turnRed,
+		'blue': turnBlue,
+		'purple': turnPurple,
+		'gray': turnGray,
+		'yellow': turnYellow,
     'show me *tag': show_me,
     'remove (movies that are) appropriate (for children above the age of) :number': remove,
     'add *tag': add,
